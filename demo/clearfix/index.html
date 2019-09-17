@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<style type="text/css">
+		.container {
+			width: 400px;
+			background-color: green;
+			margin: 10px;
+		}
+
+		.float {
+			float: right;
+			width: 200px;
+			height: 100px;
+			background-color: red;
+		}
+
+		.container1 {
+			/* overflow: hidden 亦可，各有优缺点  */
+			overflow: auto;
+		}
+
+		.container2::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.container3::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		.container4 {
+			/* 类似 hardcode */
+			height: 100px;
+		}
+
+		.container5::before,
+		.container5::after {
+			content: "";
+			display: table;
+		}
+
+		.container5::after {
+			clear: both;
+		}
+
+		.container5 {
+			zoom: 1;
+		}
+
+		.container6 {
+			/* 父元素浮动也可清除浮动，有副作用 */
+			float: right;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container container1">
+		<div class="float"></div>
+	</div>
+	<div class="container container2">
+		<div class="float"></div>
+	</div>
+	<div class="container container3">
+		<div class="float"></div>
+	</div>
+	<div class="container container4">
+		<div class="float"></div>
+	</div>
+	<div class="container container5">
+		<div class="float"></div>
+	</div>
+	<div class="container container6">
+		<div class="float"></div>
+	</div>
+</body>
+
+</html>

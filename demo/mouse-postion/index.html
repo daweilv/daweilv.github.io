@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            padding-left: 50px;
+        }
+
+        .div {
+            text-align: center;
+            font-size: 24px;
+            height: 300px;
+            width: 1300px;
+            line-height: 300px;
+            color: yellow;
+        }
+
+        #d1 {
+            background-color: red;
+        }
+
+        #d2 {
+            background-color: green;
+
+        }
+
+        #d3 {
+            background-color: blue;
+        }
+
+        #d4 {
+            position: absolute;
+            background-color: yellow;
+            height: 250px;
+            width: 100px;
+            top: 0;
+        }
+    </style>
+    <script type="text/javascript">
+
+        $(function () {
+
+            window.onscroll = function () {
+                $("#d4").css("top", getScrollTop());
+            };
+
+            document.onmousemove = function (e) {
+                if (e == null) {
+                    e = window.event;
+                }
+                var html = "screenX:" + e.screenX + "<br/>";
+                html += "screenY:" + e.screenY + "<br/><br/>";
+                html += "clientX:" + e.clientX + "<br/>";
+                html += "clientY:" + e.clientY + "<br/><br/>";
+                html += "layerX:" + e.layerX + "<br/>";
+                html += "layerY:" + e.layerY + "<br/><br/>";
+                html += "offsetX:" + e.offsetX + "<br/>";
+                html += "offsetY:" + e.offsetY + "<br/><br/>";
+                if (e.pageX == null) {
+                    html += "pageX:" + e.x + "<br/>";
+                    html += "pageY:" + e.y + "<br/>";
+                } else {
+                    html += "pageX:" + e.pageX + "<br/>";
+                    html += "pageY:" + e.pageY + "<br/>";
+                }
+
+                $("#d4").html(html);
+            };
+        });
+
+        function getScrollTop() {
+            var top = (document.documentElement && document.documentElement.scrollTop) ||
+                document.body.scrollTop;
+            return top;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="d4"></div>
+</body>
+
+</html>

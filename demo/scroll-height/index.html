@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>clientHeight、offsetHeight、scrollHeight、offsetTop、scrollTop</title>
+    <style>
+        * {
+            box-sizing: content-box;
+        }
+
+        .container {
+            height: 150px;
+            width: 400px;
+            padding: 20px;
+            border: 10px solid rebeccapurple;
+            background-color: rgba(157, 81, 238, 0.45);
+            overflow: auto;
+        }
+
+        .content {
+            height: 1000px;
+            width: 400px;
+            background-color: limegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content"></div>
+    </div>
+    <pre id="opt"></pre>
+    <script>
+        var ele = document.querySelector('.container');
+        var clientHeight = ele.clientHeight;
+        var clientWidth = ele.clientWidth;
+        var offsetHeight = ele.offsetHeight;
+        var offsetWidth = ele.offsetWidth;
+        var scrollHeight = ele.scrollHeight;
+        var scrollWidth = ele.scrollWidth;
+        document.querySelector('#opt').innerHTML = '.container {\n' +
+            '    height: 150px;\n' +
+            '    width: 200px;\n' +
+            '    padding: 20px;\n' +
+            '    border: 10px solid rebeccapurple;\n' +
+            '    background-color: rgba(157, 81, 238, 0.45);\n' +
+            '    overflow: auto;\n' +
+            '}\n' +
+            '.content {\n' +
+            '    height: 600px;\n' +
+            '    width: 140px;\n' +
+            '    background-color: limegreen;\n' +
+            '}' +
+            '\n\n\n' +
+            'clientHeight: ' + clientHeight + '   clientWidth: ' + clientWidth + '\n' +
+            'offsetHeight: ' + offsetHeight + '   offsetWidth: ' + offsetWidth + '\n' +
+            'scrollHeight: ' + scrollHeight + '   scrollWidth: ' + scrollWidth + '\n'
+    </script>
+</body>
+
+</html>

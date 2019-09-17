@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-size: 16px;
+        }
+
+        .header,
+        .main,
+        .footer {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .header {
+            background-color: #E8EAF6;
+            height: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .header:before {
+            content: 'header';
+            position: absolute;
+            background-color: #fff;
+        }
+
+        .main {
+            flex: 1;
+            background-color: #E3F2FD;
+        }
+
+        .main:before {
+            content: 'main';
+            position: absolute;
+            background-color: #fff;
+        }
+
+        .footer {
+            background-color: #E8EAF6;
+            height: 1rem;
+            flex-shrink: 0;
+        }
+
+        .footer:before {
+            content: 'footer';
+            position: absolute;
+            background-color: #fff;
+        }
+
+        .container {
+            background-color: #BBDEFB;
+            flex: 1;
+            position: relative;
+
+        }
+
+        .container:before {
+            content: 'container width 100%';
+            position: absolute;
+            background-color: #fff;
+        }
+
+        .main .container {
+            background-color: #C5CAE9;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            font-size: .28rem;
+            width: 50%;
+            background-color: #EDE7F6;
+            border: 5px solid #81C784
+        }
+
+        .item:nth-of-type(3n+1) {
+            background-color: #E1F5FE;
+            border: 5px solid #4DB6AC
+        }
+
+        .item:nth-of-type(3n+2) {
+            background-color: #F9FBE7;
+            border: 5px solid #AED581
+        }
+
+        .img {
+            height: 2rem;
+        }
+
+        .desc {
+            width: 1.6rem;
+            font-size: .28rem;
+            color: #FF9800;
+            line-height: .40rem;
+            border: 1px solid #FFCC80;
+            margin: 5px 20px
+        }
+
+        @media (min-width:576px) {
+            .container {
+                width: 12rem;
+                margin: 0 auto;
+            }
+            .container:before {
+                content: 'container width 12rem';
+                position: absolute;
+                background-color: #fff;
+            }
+
+            .item {
+                font-size: .32rem;
+                width: 33.333%;
+            }
+        }
+
+        @media (min-width:1024px) {
+            .container {
+                width: 18rem;
+            }
+            .container:before {
+                content: 'container width 18rem';
+                position: absolute;
+                background-color: #fff;
+            }
+            .item {
+                font-size: .36rem;
+                width: 25%;
+            }
+        }
+    </style>
+    <script>
+        (function () {
+            var responsive = function () {
+                var clientWidth = document.documentElement.clientWidth;
+                if (clientWidth < 575) {
+                    document.documentElement.style.fontSize = clientWidth / 750 * 100 + 'px';
+                } else if (clientWidth < 1024) {
+                    document.documentElement.style.fontSize = clientWidth / 1536 * 100 + 'px';
+                } else {
+                    document.documentElement.style.fontSize = '50px'
+                }
+            };
+            responsive();
+            window.onresize = function () {
+                responsive()
+            };
+        }())
+    </script>
+</head>
+<div class="header">
+    <div class="container"></div>
+</div>
+<div class="main">
+    <div class="container">
+
+        <div class="grid">
+            <div class="item">
+                <div class="img" style="background: url('./p1.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+            <div class="item">
+                <div class="img" style="background: url('./p5.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+            <div class="item">
+                <div class="img" style="background: url('./p2.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+            <div class="item">
+                <div class="img" style="background: url('./p3.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+            <div class="item">
+                <div class="img" style="background: url('./p4.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+            <div class="item">
+                <div class="img" style="background: url('./p5.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+            <div class="item">
+                <div class="img" style="background: url('./p3.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+            <div class="item">
+                <div class="img" style="background: url('./p2.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+            <div class="item">
+                <div class="img" style="background: url('./p3.jpg') center no-repeat;background-size: cover;"></div>
+                <div class="desc">阿发啊滴</div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+            <div class="item">【各个控件尺寸在各断点区间内表现一致，等比缩放】院去都局铁市或们，自增单知包今，过命5需无与。 院空都别上认土，习证酸体革务联，山杨提磨。 最规她装等青起子制消，气间别加才间应知，酸门3整能火布壳。 </div>
+        </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="container"></div>
+</div>
+
+<body>
+
+</body>
+
+</html>
