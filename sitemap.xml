@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://daweilv.com/2019/09/05/build-your-own-bind/</loc>
+    
+    <lastmod>2019-09-29T02:35:07.804Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://daweilv.com/about/index.html</loc>
+    
+    <lastmod>2019-09-29T02:35:07.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://daweilv.com/spec/index.html</loc>
+    
+    <lastmod>2019-09-29T02:25:46.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://daweilv.com/2019/09/26/react-recommend-article/</loc>
+    
+    <lastmod>2019-09-26T08:50:37.561Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://daweilv.com/2016/07/18/mac-keyboard/</loc>
     
-    <lastmod>2019-09-18T07:47:09.249Z</lastmod>
+    <lastmod>2019-09-18T08:09:15.314Z</lastmod>
     
   </url>
   
@@ -19,13 +47,6 @@
     <loc>https://daweilv.com/2018/07/12/responsive-layout-base-media-query-and-rem/</loc>
     
     <lastmod>2019-09-17T02:18:09.638Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://daweilv.com/about/index.html</loc>
-    
-    <lastmod>2019-09-17T01:31:11.995Z</lastmod>
     
   </url>
   
@@ -117,13 +138,6 @@
     <loc>https://daweilv.com/2019/05/29/API-design/</loc>
     
     <lastmod>2019-09-16T08:47:58.789Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://daweilv.com/2019/09/05/build-your-own-bind/</loc>
-    
-    <lastmod>2019-09-16T08:47:58.783Z</lastmod>
     
   </url>
   
