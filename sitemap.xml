@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://daweilv.com/2019/09/05/event-loop-intro/</loc>
+    
+    <lastmod>2019-10-29T07:06:51.770Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://daweilv.com/2019/09/26/react-recommend-article/</loc>
     
-    <lastmod>2019-09-29T03:18:08.322Z</lastmod>
+    <lastmod>2019-10-12T07:42:42.354Z</lastmod>
     
   </url>
   
@@ -229,13 +236,6 @@
     <loc>https://daweilv.com/2016/12/09/regexp-in-js/</loc>
     
     <lastmod>2019-09-16T08:47:58.727Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://daweilv.com/2019/09/05/event-loop-intro/</loc>
-    
-    <lastmod>2019-09-16T08:47:58.709Z</lastmod>
     
   </url>
   
