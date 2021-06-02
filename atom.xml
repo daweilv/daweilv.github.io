@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>大卫吕的技术博客</title>
+  <title>吕大卫的技术博客</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://daweilv.com/"/>
-  <updated>2019-10-12T07:42:42.354Z</updated>
+  <updated>2019-12-23T06:35:00.000Z</updated>
   <id>https://daweilv.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://daweilv.com/2019/09/26/react-recommend-article/"/>
     <id>https://daweilv.com/2019/09/26/react-recommend-article/</id>
     <published>2019-09-26T03:33:02.000Z</published>
-    <updated>2019-10-12T07:42:42.354Z</updated>
+    <updated>2019-12-23T06:35:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p>why is <code>setState</code> asynchronous?<br><a href="https://github.com/facebook/react/issues/11527#issuecomment-360199710" target="_blank" rel="noopener">https://github.com/facebook/react/issues/11527#issuecomment-360199710</a></p><p>When and why are setState() calls batched?<br><a href="https://stackoverflow.com/questions/48563650/does-react-keep-the-order-for-state-updates/48610973#48610973" target="_blank" rel="noopener">https://stackoverflow.com/questions/48563650/does-react-keep-the-order-for-state-updates/48610973#48610973</a></p><p>Dive into React codebase: Transactions<br><a href="https://reactkungfu.com/2015/12/dive-into-react-codebase-transactions/" target="_blank" rel="noopener">https://reactkungfu.com/2015/12/dive-into-react-codebase-transactions/</a></p><p>15.0 stable version<br><a href="https://github.com/facebook/react/tree/15-stable" target="_blank" rel="noopener">https://github.com/facebook/react/tree/15-stable</a></p><p><a href="https://engineering.hexacta.com/didact-learning-how-react-works-by-building-it-from-scratch-51007984e5c5" target="_blank" rel="noopener">https://engineering.hexacta.com/didact-learning-how-react-works-by-building-it-from-scratch-51007984e5c5</a></p><p>React Fiber Architecture<br><a href="https://github.com/acdlite/react-fiber-architecture" target="_blank" rel="noopener">https://github.com/acdlite/react-fiber-architecture</a></p>]]></content>
+    <content type="html"><![CDATA[<p>why is <code>setState</code> asynchronous?<br><a href="https://github.com/facebook/react/issues/11527#issuecomment-360199710" target="_blank" rel="noopener">https://github.com/facebook/react/issues/11527#issuecomment-360199710</a></p><p>When and why are setState() calls batched?<br><a href="https://stackoverflow.com/questions/48563650/does-react-keep-the-order-for-state-updates/48610973#48610973" target="_blank" rel="noopener">https://stackoverflow.com/questions/48563650/does-react-keep-the-order-for-state-updates/48610973#48610973</a></p><p>Dive into React codebase: Transactions<br><a href="https://reactkungfu.com/2015/12/dive-into-react-codebase-transactions/" target="_blank" rel="noopener">https://reactkungfu.com/2015/12/dive-into-react-codebase-transactions/</a></p><p>15.0 stable version<br><a href="https://github.com/facebook/react/tree/15-stable" target="_blank" rel="noopener">https://github.com/facebook/react/tree/15-stable</a></p><p><a href="https://engineering.hexacta.com/didact-learning-how-react-works-by-building-it-from-scratch-51007984e5c5" target="_blank" rel="noopener">https://engineering.hexacta.com/didact-learning-how-react-works-by-building-it-from-scratch-51007984e5c5</a></p><p>React Fiber Architecture<br><a href="https://github.com/acdlite/react-fiber-architecture" target="_blank" rel="noopener">https://github.com/acdlite/react-fiber-architecture</a></p><p>Still don’t understand why you need Redux? Read this…<br><a href="https://almerosteyn.com/2016/08/redux-explained-again" target="_blank" rel="noopener">https://almerosteyn.com/2016/08/redux-explained-again</a></p>]]></content>
     
     <summary type="html">
     
